@@ -1,0 +1,13 @@
+#+TITLE: Deadlines for Conferences & Journals
+#+AUTHOR: Abhijit Paul
+#+DATE: <2024-06-23 রবি>
+
+The works and their corresponding deadlines can be seen below.
+
+| Research                      | Conference | Deadline          |
+|-------------------------------+------------+-------------------|
+| Stemming                      | ACM TALLIP | Anytime,July 25th |
+| Representation Discrimination | [[https://chi2024.acm.org/for-authors/papers/][CHI24]]      | 7th Sep           |
+| BSL Survey                    | Journal    |                   |
+| Knowledge Graph Tool Paper    | Workshop   | ?                 |
+| BSL Tool Paper                | Workshop   | ?                 |
