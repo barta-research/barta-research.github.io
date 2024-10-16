@@ -1,60 +1,74 @@
-import { useEffect, useRef } from "react";
 import banglaBanner from "../../assets/banner.png";
-import LatestNews from "./components/LatestNews"; // Import the new LatestNews component
 
 const Home = () => {
   return (
-    <div>
-      {/* About Section */}
-      <section className="py-12 bg-white text-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-3">About</h2>
-          <p className="text-lg leading-relaxed">
-            The Bangla AI Research, Technology, and Application (BARTA) group
-            works on Natural Language Processing (NLP) for Bangla language,
-            developing technologies for social inclusion, accessibility, and
-            language understanding. Our team focuses on using AI and advanced
-            technologies to tackle linguistic challenges specific to Bangla and
-            to create tools and resources for the community.
-          </p>
-          <p className="text-lg leading-relaxed mt-3">
-            We aim to provide research breakthroughs in AI for Bangla, focusing
-            on accessibility, machine learning models, and the democratization
-            of NLP tools for everyone. Through our research and application,
-            we're building a more inclusive digital future for Bangla speakers.
-          </p>
-        </div>
-      </section>
+    <div
+      style={{
+        backgroundImage: `url(${banglaBanner})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '100vh',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        position: 'relative',
+        color: 'white',
+        zIndex: '0',
+      }}
+    >
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
+          zIndex: '1',
+        }}
+      />
 
-      {/* New Section: Motivated Students Recruitment */}
-      <section className="py-0 bg-[#f7f8fa] text-gray-800">
-        <div className="container mx-auto px-4 text-center">
+      <div
+        style={{
+          color: 'white',
+          zIndex: '2',
+          textAlign: 'center',
+		  marginLeft: '10%',
+		  marginRight: '10%',
+          padding: '0 2rem',
+        }}
+      >
+        <h1
+          style={{
+            fontSize: '5rem',
+            fontWeight: 'bold',
+			lineHeight: '1.4',
+            letterSpacing: '0.01em',
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+            marginBottom: '1rem',
+          }}
+        >
+          Bangla AI Research, Technologies and Applications (BARTA)
+        </h1>
 
-          {/* Top horizontal line */}
-          <div className="border-t-2 border-gray-300 mb-4"></div>
-
-          <h2 className="text-4xl font-extrabold mb-3">Join Our Research Team</h2>
-          <p className="text-lg leading-relaxed mb-3 max-w-2xl mx-auto">
-            We're seeking students passionate about AI and NLP to contribute to Bangla research. 
-            Help us push boundaries in technology and innovation.
-          </p>
-          <div className="mt-4">
-            <a
-              href="#contact"
-              className="bg-gradient-to-r from-black to-blue-900 text-white font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out shadow-md"
-              style={{ paddingLeft: '5rem', paddingRight: '5rem' }} // Adjust padding as required
-            >
-              Contact Us
-            </a>
-          </div>
-
-          {/* Bottom horizontal line */}
-          <div className="border-t-2 border-gray-300 mt-6"></div>
-        </div>
-      </section>
-
-      {/* Latest News Section */}
-      <LatestNews /> {/* Use the LatestNews component here */}
+        <p
+          style={{
+            fontSize: '1.8rem',
+            fontWeight: 'normal',
+            lineHeight: '1.2',
+            maxWidth: '60rem',
+            margin: '0 auto',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)',
+          }}
+        >
+          Hello! We are a group of enthusiastic people wanting to solve the many problems around Bangla Natural Language Processing.
+          We extensively focus on social inclusion and accessibility for universalism of human values.
+        </p>
+      </div>
     </div>
   );
 };

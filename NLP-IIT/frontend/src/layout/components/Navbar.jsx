@@ -12,14 +12,14 @@ const Navbar = () => {
       <li>
         <NavLink to="/publications">Publications</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/collaborations">International Collaborations</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/team">Meet with the Team</NavLink>
       </li>
       <li>
-        <NavLink to="/projects">Latest in BNLP</NavLink>
+        <NavLink to="/latest">Latest in BNLP</NavLink>
       </li>
     </div>
   );
