@@ -5,24 +5,23 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Detail = ({ user }) => {
-	// Ensure that user and user.image exist before rendering the component
 	if (!user || !user.image) {
-		return null; // Render nothing or fallback UI if data is missing
+		return null;
 	}
 
 	return (
 		<div>
-			{/* Card layout with image in the top-left and text on the right */}
 			<div
 				className="max-w-sm mx-auto bg-white border-2 border-blue-900 rounded-lg overflow-hidden flex cursor-pointer"
-				style={{ height: '300px', width: '500px', display: 'flex', alignItems: 'flex-start' }} // Set card height to 350px
+				style={{ height: '300px', width: '500px', display: 'flex', alignItems: 'flex-start' }}
 			>
 				<div className="flex-shrink-0 p-4">
 					<img
 						src={user.image}
 						alt={user.name || 'Profile Image'}
-						className="w-48 h-48 object-cover rounded-xl" // Increased image size slightly
+						className="w-48 h-48 object-cover rounded-xl"
 					/>
+					<p className="text-center text-gray-700 mt-2 font-italic">{user.role}</p>
 				</div>
 				<div className="p-4 flex-grow flex flex-col justify-between" style={{ overflow: 'hidden' }}>
 					<div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -41,7 +40,6 @@ const Detail = ({ user }) => {
 							</p>
 						</div>
 					</div>
-					{/* Social Icons positioned at the bottom-right */}
 					<div className="flex gap-2 items-center justify-start mt-2">
 						<a href={`mailto:${user.email}`} className="text-blue-600 hover:underline">
 							<MdOutlineMail className="text-lg" />
@@ -72,6 +70,7 @@ Detail.propTypes = {
 		googleScholar: PropTypes.string,
 		github: PropTypes.string,
 		linkedin: PropTypes.string,
+		role: PropTypes.string,
 	}),
 };
 

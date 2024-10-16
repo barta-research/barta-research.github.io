@@ -1,6 +1,11 @@
 const LatestInBNLP = () => {
 	return (
-		<section className="py-16 bg-gray-100 text-black">
+		<section className="py-16 bg-white bg-gray-100 text-black" 
+		style={{
+			height: '100%',
+			marginLeft: '10%',
+		  marginRight: '10%',
+		}} >
 			<div className="container mx-auto px-6">
 				<h2 className="text-4xl font-bold mb-4">Latest News</h2>
 				<p className="text-lg leading-relaxed mb-6">
@@ -9,7 +14,7 @@ const LatestInBNLP = () => {
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{/* News Article 1 */}
-					<div className="bg-white shadow-lg p-6 rounded-lg">
+					<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 						<h3 className="text-2xl font-semibold mb-2">Weekly Team Meetings</h3>
 						<p className="text-gray-700 mb-4">
 							Every Wednesday, our team holds a weekly meeting to discuss the progress made in research,
@@ -22,7 +27,7 @@ const LatestInBNLP = () => {
 					</div>
 
 					{/* News Article 2 */}
-					<div className="bg-white shadow-lg p-6 rounded-lg">
+					<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 						<h3 className="text-2xl font-semibold mb-2">Visit to SoftBD Software Company</h3>
 						<p className="text-gray-700 mb-4">
 							Recently, the BARTA team visited SoftBD, one of the leading software companies in Bangladesh.
@@ -35,7 +40,7 @@ const LatestInBNLP = () => {
 					</div>
 
 					{/* News Article 3 */}
-					<div className="bg-white shadow-lg p-6 rounded-lg">
+					<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 						<h3 className="text-2xl font-semibold mb-2">New Paper: Stemming in NLP</h3>
 						<p className="text-gray-700 mb-4">
 							Our latest research paper titled "Stemming in Natural Language Processing - The Evolution and
@@ -48,7 +53,7 @@ const LatestInBNLP = () => {
 					</div>
 
 					{/* News Article 4 */}
-					<div className="bg-white shadow-lg p-6 rounded-lg">
+					<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 						<h3 className="text-2xl font-semibold mb-2">Completed Project: Knowledge Graph</h3>
 						<p className="text-gray-700 mb-4">
 							We are excited to announce the completion of our latest project focused on building a
@@ -61,7 +66,7 @@ const LatestInBNLP = () => {
 					</div>
 
 					{/* News Article 5 */}
-					<div className="bg-white shadow-lg p-6 rounded-lg">
+					<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 						<h3 className="text-2xl font-semibold mb-2">Research on Representation of Ethnic Groups</h3>
 						<p className="text-gray-700 mb-4">
 							Our team has been working on creating representation models for ethnic groups in Bangladesh,

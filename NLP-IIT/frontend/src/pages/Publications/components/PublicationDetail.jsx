@@ -4,7 +4,7 @@ const PublicationDetail = ({ publicationInfo }) => {
 	const { title, authors, publishedIn, pdf, code } = publicationInfo;
 
 	return (
-		<div className="bg-gray-100 p-6 rounded-lg">
+		<div className="bg-gray-100 shadow-lg p-6 rounded-lg">
 			<h2 className="text-xl font-bold mb-1">{title}</h2>
 			<p className="text-gray-500 mb-2">{authors}</p>
 			<p>{publishedIn}</p>
