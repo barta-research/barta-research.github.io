@@ -5,6 +5,7 @@ import LatestInBNLP from "../pages/LatestInBNLP/LatestInBNLP";
 import Publications from "../pages/Publications/Publications";
 import Collaboration from "../pages/Collaboration/Collaboration";
 import Team from "../pages/Team/Team";
+import OngoingProjects from "../pages/OngoingProjects/OngoingProjects";
 import Root from "../layout/Root";
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/team",
         element: <Team />,
+      },
+      {
+        path: "/ongoing-projects", 
+        element: <OngoingProjects />, 
       },
     ],
   },
